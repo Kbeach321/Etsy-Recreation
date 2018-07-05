@@ -1,4 +1,4 @@
-var source   = document.getElementById("entry-template").innerHTML;
+var source   = document.getElementById("etsy-item").innerHTML;
 // console.log('source', source)
 var template = Handlebars.compile(source);
 // console.log('template', template)
