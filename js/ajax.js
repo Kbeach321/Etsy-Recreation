@@ -9,8 +9,22 @@ $.ajax({
   url: `${baseUrl}?api_key=${key}&keywords=${keyword}&includes=${includes}&limit=${limit}`,
   type: 'GET',
   dataType: 'jsonp',
-  success: function(res) {
-    console.log(res);
-  }
+  success: start
+});
 
-})
+function start(res){
+  console.log(res);
+
+  var source   = document.getElementById("etsy-item").innerHTML;
+  // console.log('source', source)
+  var template = Handlebars.compile(source);
+  // console.log('template', template)
+  var context = res;
+  // console.log("context", context)
+  var html = template(context);
+  console.log('html', html);
+
+  $('.items').html(html)
+
+
+}

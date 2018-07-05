@@ -12,24 +12,55 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-12 header"> Header Filler</div>
+      <div class="col header_left"> <span> Etsy Recreation </span> </div>
+      <div class="col header"> Header Filler</div>
     </div>
     <div class="row">
-      <div class="col-4 menu"> Menu </div>
-      <div class="col-8 items"> Items </div>
+      <div class="col-3 menu">
+        <div class="col-12 categories"><span> All Categories </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> Craft Supplies & Tools </a></span>
+            <span><a href="#"> Accessories </a></span>
+            <span><a href="#"> Home & Living </a></span>
+            <span><a href="#"> Clothing </a></span>
+          </div>
+        </div>
+        <div class="col-12 shipping"><span> Shipping </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> Free Shipping </a></span>
+            <span><a href="#"> Ready to ship in 1 business day </a></span>
+            <span><a href="#"> Ready to ship within 3 business days </a></span>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="col-8 offset-1">
+        <div class="row items"></div>
+      </div>
     </div>
+
+
+
+
+
 
 
 
     <script id="etsy-item" type="text/x-handlebars-template">
-      <div class="entry">
-        <h1>{{title}}</h1>
-        <div class="body">
-          {{body}}
+      {{#results}}
+        <div class="col-3">
+          <p>{{title}}</p>
+          <img src={{Images.0.url_75x75}} alt="">
         </div>
-      </div>
+      {{/results}}
     </script>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
