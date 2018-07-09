@@ -26,5 +26,4 @@ function start(res){
 
   $('.items').html(html)
 
-
 }

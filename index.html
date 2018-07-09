@@ -15,9 +15,9 @@
       <div class="col header_left"> <span> Etsy Recreation </span> </div>
       <div class="col header"> Header Filler</div>
     </div>
-    <div class="row">
+    <div class="row shell">
       <div class="col-3 menu">
-        <div class="col-12 categories"><span> All Categories </span>
+        <div class="col-12 categories"><span> All categories </span>
           <div class="col-10 offset-1 clickables-">
             <span><a href="#"> Craft Supplies & Tools </a></span>
             <span><a href="#"> Accessories </a></span>
@@ -32,33 +32,57 @@
             <span><a href="#"> Ready to ship within 3 business days </a></span>
           </div>
         </div>
-
-
+        <div class="col-12 shipping"><span> Special offers </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> On Sale </a></span>
+          </div>
+        </div>
+        <div class="col-12 shipping"><span> Shop location </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> Anywhere </a></span>
+            <span><a href="#"> United States </a></span>
+            <span><a href="#"> Custom </a></span>
+          </div>
+        </div>
+        <div class="col-12 shipping"><span> Item type </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> All items </a></span>
+            <span><a href="#"> Handmade </a></span>
+            <span><a href="#"> Vintage </a></span>
+          </div>
+        </div>
+        <div class="col-12 shipping"><span> Price ($) </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> Any price </a></span>
+            <span><a href="#"> Under $25 </a></span>
+            <span><a href="#"> $25 to $50 </a></span>
+            <span><a href="#"> $50 to $100 </a></span>
+            <span><a href="#"> Over $100 </a></span>
+            <span><a href="#"> Custom </a></span>
+          </div>
+        </div>
+        <div class="col-12 shipping"><span> Ordering options </span>
+          <div class="col-10 offset-1 clickables-">
+            <span><a href="#"> Accepts Etsy gift cards </a></span>
+            <span><a href="#"> Customizable </a></span>
+            <span><a href="#"> Can be gift-wrapped </a></span>
+          </div>
+        </div>
 
       </div>
 
-
-
-
-
-      <div class="col-8 offset-1">
+      <div class="col-8 offset-1 itembox">
         <div class="row items"></div>
       </div>
     </div>
 
-
-
-
-
-
-
-
     <script id="etsy-item" type="text/x-handlebars-template">
       {{#results}}
-        <div class="col-3">
-          <p>{{title}}</p>
-          <img src={{Images.0.url_75x75}} alt="">
-        </div>
+      <div class="col-6 col-md-3 item">
+        <img src={{Images.0.url_75x75}} alt="">
+        <p>{{title}}</p>
+        <p>${{price}}</p>
+      </div>
       {{/results}}
     </script>
 
@@ -67,7 +91,6 @@
     <script src="./js/jquery.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-    <script src="./js/handlebars.js"></script>
     <script src="./js/ajax.js"></script>
   </div>
 </body>

@@ -28,30 +28,44 @@ ul {
 }
 
 .menu {
-  /* height: 500px; */
+  height: 900px;
   border: thin solid;
   padding: 10px;
   margin-top: 10px;
 }
 
 .items {
-  background-color: gray;
   margin-top: 10px;
 }
+
 
 .categories {
   margin-bottom: 10px;
 }
 
 .shipping {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-top: thin solid black;
 }
 
+#etsy-item {
+  height: 200px;
+}
+
+.shell .offset-1 {
+  margin-left: 5%
+}
+
+.item p {
+  text-overflow: ellipsis;
+}
 @media(max-width: 768px) {
   .header {
     font-size: 1em;
   }
   .header_left {
     font-size: 1em;
+  }
+  .menu {
+    display: none;
   }
