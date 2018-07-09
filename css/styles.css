@@ -61,6 +61,14 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 1px;
+
+}
+
+.seller {
+  color: gray;
+  font-size: .8em;
+  margin-bottom: 1px;
 }
 
 @media(max-width: 768px) {
