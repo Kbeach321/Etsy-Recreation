@@ -19,6 +19,7 @@ ul {
   border-bottom: thin solid black;
   padding: 10px 0px;
 }
+
 .header_left {
   color: #FF4000;
   font-size: 2em;
@@ -28,7 +29,7 @@ ul {
 }
 
 .menu {
-  height: 900px;
+  height: 950px;
   border: thin solid;
   padding: 10px;
   margin-top: 10px;
@@ -56,9 +57,12 @@ ul {
   margin-left: 5%
 }
 
-.item p {
+.title {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
+
 @media(max-width: 768px) {
   .header {
     font-size: 1em;
@@ -68,4 +72,18 @@ ul {
   }
   .menu {
     display: none;
+    white-space: nowrap;
   }
+}
+
+@media(max-width: 992px){
+  .menu {
+    height: 1150px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .menu {
+    font-size: .8rem;
+  }
+}
